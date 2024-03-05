@@ -222,7 +222,8 @@ body {
   color: #1c2024 !important;
 }
 
-.btn:hover {
+.prev:hover,
+.next:hover {
   background-color: #50a060;
 }
 
