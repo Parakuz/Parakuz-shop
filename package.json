@@ -1,0 +1,19 @@
+{
+  "name": "parakuz",
+  "version": "1.0.0",
+  "description": "merchant showcase",
+  "default": "home.html",
+  "scripts": {
+    "start": "parcel home.html",
+    "build": "parcel build home.html --dist-dir ./dist"
+  },
+  "author": "parakuz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "core-js": "^3.36.0",
+    "regenerator-runtime": "^0.14.1"
+  }
+}

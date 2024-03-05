@@ -1,0 +1,4 @@
+node_modules
+.prettierrc
+/src/script.txt
+dist

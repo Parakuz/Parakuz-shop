@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="/src/image/merchant/parakuz-shop-favicon-color.png"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@200;500&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="module" src="/src/js/controller.js"></script>
+    <link rel="stylesheet" href="src/css/home.css" />
+
+    <title>Parakuz SHOP</title>
+  </head>
+  <body>
+    <header>
+      <a href="#"
+        ><img
+          class="logo_shop"
+          src="src/image/merchant/logo-no-background.png"
+          alt="parakuz-shop"
+      /></a>
+
+      <nav class="navs">
+        <li class="nav"><a href="#" class="nav-link">Section 1</a></li>
+        <li class="nav"><a href="#" class="nav-link">Section 2</a></li>
+        <li class="nav"><a href="#" class="nav-link">Section 3</a></li>
+        <li class="nav"><a href="#" class="nav-link">Section 4</a></li>
+        <li class="nav"><a href="#" class="nav-link">Section 5</a></li>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container-hero">
+          <div class="detail">
+            <h1 class="heading-primary">Best fashion shop</h1>
+            <article class="hero-article">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda deleniti fugit praesentium magni atque? Asperiores, quos
+              delectus eos dolore quas illum voluptates amet incidunt facilis
+              blanditiis maxime hic quidem. Quia ipsum amet quis dignissimos
+              error aperiam unde nihil temporibus repellat voluptatem
+              necessitatibus, tempore, et nesciunt. Quam placeat dicta
+              provident. Sint.
+            </article>
+            <div class="more">
+              <a class="btn hero-btn" href="#">JOIN WITH US!</a>
+              <a class="btn hero-btn" href="#">LEARN MORE!</a>
+            </div>
+          </div>
+          <div class="hero-imgs">
+            <img
+              class="hero-img"
+              src="/src/image/hero/hero-img1.jpg"
+              alt="Man with green pant"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="/src/image/logo/techcrunch.png" alt="Tecrench logo" />
+            <img
+              src="/src/image/logo/business-insider.png"
+              alt="Business insider logo"
+            />
+            <img
+              src="/src/image/logo/the-new-york-times.png"
+              alt="The new york times logo"
+            />
+            <img src="/src/image/logo/forbes.png" alt="forbes logo" />
+            <img src="/src/image/logo/usa-today.png" alt="USA logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="merchant-product">
+        <div class="container merchants grid">
+          <div class="merchants-lists">
+            <h2 class="secondary-heading">Merchants</h2>
+            <label for="search" class="merchants-search">Search Items</label>
+            <form name="search" class="merchants-form">
+              <input
+                type="text"
+                id="search"
+                placeholder="Search anything you want..."
+                name="search"
+              />
+              <button class="submit-search" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="feature-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                  />
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M338.29 338.29L448 448"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <div class="merchant-listitem">
+              <div class="header-catelog">
+                <h2 class="secondary-heading">Catalog</h2>
+              </div>
+              <div class="super-list-item">
+                <!-- <li class="merchant-list-item">
+                  <a href="#" class="item active">Catalog1</a>
+                </li>
+                <li class="merchant-list-item">
+                  <a href="#" class="item">Catalog2</a>
+                </li>
+              <li class="merchant-list-item">
+                <a href="#" class="item">Catalog3</a>
+              </li> -->
+              </div>
+            </div>
+          </div>
+          <!-- PRODUCT DETAIL -->
+          <div class="items-products none">
+            <div class="image-product flex">
+              <img
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt="backpack"
+                class="product-image"
+              />
+              <div class="products">
+                <h3 class="third-heading">Backpack</h3>
+                <p class="product-detail add-md-bot-margin">
+                  Your perfect pack for everyday use and walks in the forest.
+                  Stash your laptop (up to 15 inches) in the padded sleeve, your
+                  everyday
+                </p>
+                <div class="rating add-md-bot-margin">
+                  <!-- class="feature-icon star" -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="feature-icon star"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="feature-icon star"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="feature-icon star"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="feature-icon star"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M394 480a16 16 0 01-9.39-3L256 383.76 127.39 477a16 16 0 01-24.55-18.08L153 310.35 23 221.2a16 16 0 019-29.2h160.38l48.4-148.95a16 16 0 0130.44 0l48.4 149H480a16 16 0 019.05 29.2L359 310.35l50.13 148.53A16 16 0 01394 480z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="feature-icon star"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M480 208H308L256 48l-52 160H32l140 96-54 160 138-100 138 100-54-160z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linejoin="round"
+                      stroke-width="32"
+                    />
+                  </svg>
+                </div>
+                <div class="price add-md-bot-margin">
+                  <span class="prices">109.95$</span>
+                </div>
+                <div class="ratio-cart">
+                  <div class="product-ratio">
+                    <span class="minus">-</span>
+                    <span class="num">01</span>
+                    <span class="plus">+</span>
+                  </div>
+                  <a href="#" class="submit-cart">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PRODUCT LIST -->
+          <div class="merchants-catalog">
+            <div class="header-catelog">
+              <h2 class="secondary-heading">Items list</h2>
+            </div>
+            <div class="card-items">
+              <!-- <div class="card-item">
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  alt="backpack"
+                  class="image-item"
+                />
+                <p class="title">Foldsack No. 1 Backpack</p>
+                <p class="description">
+                  Fjallraven best backpack, Fits 15 Laptops
+                </p>
+                <div class="prices">
+                  <p class="price">109.95$</p>
+                  <p class="count">Sale 120 pieces</p>
+                </div>
+              </div>
+              <div class="card-item">
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  alt="backpack"
+                  class="image-item"
+                />
+                <p class="title">Foldsack No. 1 Backpack</p>
+                <p class="description">
+                  Fjallraven best backpack, Fits 15 Laptops
+                </p>
+                <div class="prices">
+                  <p class="price">109.95$</p>
+                  <p class="count">Sale 120 pieces</p>
+                </div>
+              </div>
+              <div class="card-item">
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  alt="backpack"
+                  class="image-item"
+                />
+                <p class="title">Foldsack No. 1 Backpack</p>
+                <p class="description">
+                  Fjallraven best backpack, Fits 15 Laptops
+                </p>
+                <div class="prices">
+                  <p class="price">109.95$</p>
+                  <p class="count">Sale 120 pieces</p>
+                </div>
+              </div> -->
+            </div>
+
+            <div class="pagnation-main">
+              <button class="btn prev">prev</button>
+              <ul class="pagnations">
+                <!-- !NOT FINISH 05/03/67 -->
+                <li class="pagnation" value="1">1</li>
+                <li class="pagnation" value="2">2</li>
+                <li class="pagnation" value="3">3</li>
+                <li class="pagnation" value="4">4</li>
+                <li class="pagnation" value="5">5</li>
+              </ul>
+              <button class="btn next">next</button>
+            </div>
+          </div>
+          <!-- Cart -->
+          <div class="cart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="feature-icon cart-item"
+              viewBox="0 0 512 512"
+            >
+              <circle
+                cx="176"
+                cy="416"
+                r="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <circle
+                cx="400"
+                cy="416"
+                r="16"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M48 80h64l48 272h256"
+              />
+              <path
+                d="M160 288h249.44a8 8 0 007.85-6.43l28.8-144a8 8 0 00-7.85-9.57H128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+              />
+            </svg>
+
+            <p class="numnub">1</p>
+          </div>
+          <!-- PRODUCT CART -->
+          <div class="real-cart slider none">
+            <div class="cart-list">
+              <div class="super-list flex">
+                <div class="item-cart-list flex">
+                  <img
+                    class="image-item-list"
+                    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                    alt="backpack"
+                  />
+                </div>
+                <span class="pricess">109.95$</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="red-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M80 112h352"
+                  />
+                  <path
+                    d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <div class="super-list flex">
+                <div class="item-cart-list flex">
+                  <img
+                    class="image-item-list"
+                    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                    alt="backpack"
+                  />
+                </div>
+                <span class="pricess">109.95$</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="red-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M80 112h352"
+                  />
+                  <path
+                    d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <div class="super-list flex">
+                <div class="item-cart-list flex">
+                  <img
+                    class="image-item-list"
+                    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                    alt="backpack"
+                  />
+                </div>
+                <span class="pricess">109.95$</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="red-icon"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M112 112l20 320c.95 18.49 14.4 32 32 32h184c17.67 0 30.87-13.51 32-32l20-320"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="32"
+                    d="M80 112h352"
+                  />
+                  <path
+                    d="M192 112V72h0a23.93 23.93 0 0124-24h80a23.93 23.93 0 0124 24h0v40M256 176v224M184 176l8 224M328 176l-8 224"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                  />
+                </svg>
+              </div>
+              <ion-icon
+                class="cross-tab red-icon"
+                name="close-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><span>copyright &copy; Parakuz 2024</span></footer>
+  </body>
+</html>
