@@ -4,11 +4,11 @@ class SearchAll extends View {
   _parentElement = document.querySelector('.card-items');
 
   _generateMarkup() {
-    console.log(this._data);
+    // console.log(this._data);
     return this._data
       .map(result => {
-        return ` <a class="card-item-link" href="#${result.id}">
-        <div class="card-item">       
+        return ` <a class="card-item-link" href="#${result.id}" >
+        <div class="card-item" data-id="${result.id}">       
         <img
           src=${result.image}
           alt="backpack"

@@ -231,3 +231,11 @@ body {
   background-color: #73b380;
   color: #fff;
 }
+
+.blur {
+  filter: blur(0.5rem);
+}
+
+.counter-blur {
+  filter: blur(0rem) !important;
+}

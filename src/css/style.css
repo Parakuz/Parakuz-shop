@@ -268,6 +268,13 @@ header {
   justify-content: space-between;
   margin-bottom: 6px;
 }
+.pricesss {
+  bottom: 0;
+  padding: 0 6px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
 
 .price {
   font-weight: 600;
@@ -417,6 +424,12 @@ header {
   background-color: #73b380;
   color: #fff;
   border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-cart:hover {
+  background-color: #50a060;
 }
 
 .ratio-cart {
@@ -431,10 +444,12 @@ header {
   width: 40%;
   height: 100%;
   border-left: 1px solid #888;
+  background-color: #fff;
   position: absolute;
   right: -40%;
   top: 0;
   transition: ease-in-out 0.5s;
+  overflow-y: scroll;
 }
 
 .cart-list {

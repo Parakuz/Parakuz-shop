@@ -7,7 +7,9 @@ export const state = {
   page: 1,
   search: {
     pages: 1,
+    item: [],
   },
+  store: [],
 };
 
 export const loadCategory = async function () {
@@ -22,26 +24,57 @@ export const loadItems = async function () {
 
 export const getSearchResultsPage = function (page = state.page) {
   state.page = page;
-  console.log(page);
   const start = (page - 1) * config.RES_PER_PAGE;
   const end = page * config.RES_PER_PAGE;
-  console.log(start, end);
-  console.log(state.page);
   return state.items.slice(start, end);
 };
 
 export const searchCategory = async function (id) {
-  state.id === id ? (state.id = id) : (state.search.pages = 1);
-  const data = await helper.getJSON(`${config.API_URL}/category/${id}`);
-  state.search.catelog = [...data];
-  console.log(state.search.catelog);
+  if (id.length < 3) {
+    const data = await helper.getJSON(`${config.API_URL}/${id}`);
+    state.search.item = data;
+  } else {
+    const data = await helper.getJSON(`${config.API_URL}/category/${id}`);
+    state.search.catelog = data;
+    console.log(state.search.catelog);
+  }
 };
 
 export const getSearchResultsPageItems = function (page = state.search.pages) {
   state.search.pages = page;
   const start = (page - 1) * config.RES_PER_PAGE;
   const end = page * config.RES_PER_PAGE;
-  console.log(start, end);
-  console.log(state.search.pages);
   return state.search.catelog.slice(start, end);
 };
+
+const presistBookmarks = function () {
+  console.log(JSON.stringify(state.store));
+  localStorage.setItem('cart', JSON.stringify(state.store));
+};
+
+export const addBookmark = function (recipe) {
+  if (state.store.some(el => el.id === recipe.id)) {
+    alert('Have it in cart');
+    return;
+  }
+  state.store.push(recipe);
+
+  presistBookmarks();
+};
+
+export const deleteBookmark = function (id) {
+  const index = state.store.findIndex(el => el.id === id);
+  console.log(index);
+  state.store.splice(index, 1);
+
+  presistBookmarks();
+};
+
+const init = function () {
+  const storage = localStorage.getItem('cart');
+  if (storage) {
+    state.store = JSON.parse(storage);
+  }
+  console.log(state.store);
+};
+init();
